@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Изделия из дерева</title>
+</head>
+<body>
+    <div class="zagolovok" align="center"><b>ИЗДЕЛИЯ ИЗ ДЕРЕВА</b></div>
+</head>
+<body>
+    <div class="arrow">
+        <span class="arrow-left"></span>
+        <span class="arrow-right"></span>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".arrow").forEach(function(element) {
+                element.addEventListener("click", function() {
+                    this.classList.toggle("open");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
