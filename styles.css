@@ -1,73 +1,7 @@
-a {
-    text-decoration: none;
-    color: #000;
-}
-
+/* Общие стили */
 body {
     margin: 0;
     font-family: Century Gothic;
-}
-
-.arrow {
-	position: relative;
-	cursor: pointer;
-	margin: 20px;
-	width: 66px;
-	height: 30px;
-}
-.arrow-left {
-	position: absolute;
-	background-color: transparent;
-	top: 10px;
-	left: 0;
-	width: 40px;
-	height: 10px;
-	display: block;
-	transform: rotate(35deg);
-	float: right;
-	border-radius: 2px;
-}
-.arrow-left:after {
-	content: "";
-	background-color: #337AB7;
-	width: 40px;
-	height: 10px;
-	display: block;
-	float: right;
-	border-radius: 6px 10px 10px 6px;
-	transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-	z-index: -1;
-}
-.arrow-right {
-	position: absolute;
-	background-color: transparent;
-	top: 10px;
-	left: 26px;
-	width: 40px;
-	height: 10px;
-	display: block;
-	transform: rotate(-35deg);
-	float: right;
-	border-radius: 2px;
-}
-.arrow-right:after {
-	content: "";
-	background-color: #337AB7;
-	width: 40px;
-	height: 10px;
-	display: block;
-	float: right;
-	border-radius: 10px 6px 6px 10px;
-	transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-	z-index: -1;
-}
-.open .arrow-left:after {
-	transform-origin: center center;
-	transform: rotate(-70deg);
-}
-.open .arrow-right:after {
-	transform-origin: center center;
-	transform: rotate(70deg);
 }
 
 .zagolovok {
@@ -81,24 +15,111 @@ body {
     font-size: calc(2vw + 2vh + 2vmin);
     text-shadow: -1px -1px 0 #DDD, 1px -1px 0 #DDD, -1px 1px 0 #DDD, 1px 1px 0 #DDD;
     overflow: hidden;
- 
 }
 
+/* Стили для тулбара */
 .toolbar {
     position: sticky;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Добавлено для размещения элементов */
+    align-items: center; /* Центрирование по вертикали */
+	text-align: center;
     top: 0;
     z-index: 10;
-    width: 100%; /* Добавлено для гарантированной ширины */
-	background-color: #d0d048;
-    flex: 1 1 20%; 
-    font-size: calc(1vw + 2vh + 1vmin);  
-    text-align: center;
-    justify-content: center;
-    padding: 3px; 
+    width: 100%;
+    background-color: #d0d048;
+    padding: 3px;
     box-sizing: border-box;
-    min-width: 100px; 
-    cursor: pointer;
+	font-size: calc(2vw + 2vh + 1vmin);
+}
 
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    margin-left: 10px; /* Отступ от левого края */
+}
+
+
+/* Стили для меню */
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.burger {
+    cursor: pointer;
+    width: 40px;
+    height: 26px;
+    background: transparent;
+    border: none;
+    position: relative;
+	z-index: 99;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+}
+
+.menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: orange;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+}
+
+.menu-item {
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background: rgba(255,255,255,.2);
+}
+
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
 }
