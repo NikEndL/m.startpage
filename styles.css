@@ -50,7 +50,7 @@
     font-family: 'Palatino Linotype';
     src: local('Palatino Linotype Bold'), /* Попытка использовать локальный шрифт */
          url('https://kristy98755.github.io/startpage/Palatino%20Linotype%20Bold.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
