@@ -7,50 +7,51 @@
 /* Общие стили */
 
 @font-face {
+	font-family: 'Century Gothic';
+	font-weight: normal;
+	font-style: normal;
+	src:url('https://kristy98755.github.io/startpage/CenturyGothic.woff')format('woff'); 
+
+}
+
+@font-face {
+	font-family: 'Century Gothic';
+	font-weight: bold;
+    font-style: normal;
+    src:url('https://kristy98755.github.io/startpage/CenturyGothic-Bold.woff')format('woff');
+
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+	font-weight: bold;
+    font-style: italic;
+    src:url('https://kristy98755.github.io/startpage/CenturyGothic-BoldItalic.woff')format('woff');
+
+}
+
+@font-face {
     font-family: 'Century Gothic';
 	font-weight: normal;
-    font-style: normal;
-    src:url('https://kristy98755.github.io/startpage/CenturyGothic.woff')format('woff'); 
-
-}
-
-@font-face {
-    font-family: 'Century Gothic';
-    src:url('https://kristy98755.github.io/startpage/CenturyGothic-Bold.woff')format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Century Gothic';
-    src: local('Century Gothic Bold Italic'), /* Попытка использовать локальный шрифт */
-         url('https://kristy98755.github.io/startpage/CenturyGothic-BoldItalic.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
-    font-weight: bold;
     font-style: italic;
-}
+    src:url('https://kristy98755.github.io/startpage/CenturyGothic-Italic.woff')format('woff');
 
-@font-face {
-    font-family: 'Century Gothic';
-    src: local('Century Gothic Italic'), /* Попытка использовать локальный шрифт */
-         url('https://kristy98755.github.io/startpage/CenturyGothic-Italic.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
-    font-weight: normal;
-    font-style: italic;
 }
 
 @font-face {
     font-family: 'Palatino Linotype';
-    src: local('Palatino Linotype'), /* Попытка использовать локальный шрифт */
-         url('https://kristy98755.github.io/startpage/PalatinoLinotype.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
-    font-weight: normal;
+	font-weight: normal;
     font-style: normal;
+    src:url('https://kristy98755.github.io/startpage/PalatinoLinotype.woff')format('woff'); 
+
 }
 
 @font-face {
     font-family: 'Palatino Linotype';
-    src: local('Palatino Linotype Bold'), /* Попытка использовать локальный шрифт */
-         url('https://kristy98755.github.io/startpage/PalatinoLinotypeBold.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
-    font-weight: bold;
+	font-weight: bold;
     font-style: normal;
+    src:url('https://kristy98755.github.io/startpage/PalatinoLinotypeBold.woff')format('woff'); 
+
 }
 
 
