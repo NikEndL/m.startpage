@@ -69,6 +69,7 @@ body {
     background-repeat: repeat-x;
     font-family: 'Palatino Linotype';
     font-size: calc(2vw + 2vh + 2vmin); 
+	font-weight: bold;
     text-shadow: -1px -1px 0 #DDD, 1px -1px 0 #DDD, -1px 1px 0 #DDD, 1px 1px 0 #DDD;
     overflow: hidden;
 }
