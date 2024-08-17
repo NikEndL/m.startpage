@@ -57,7 +57,7 @@
 
 body {
     margin: 0;
-    font-family: Century Gothic;
+    font-family: 'Century Gothic';
 }
 
 .zagolovok {
@@ -67,7 +67,7 @@ body {
     white-space: nowrap;
     position: relative;
     background-repeat: repeat-x;
-    font-family: Palatino Linotype;
+    font-family: 'Palatino Linotype';
     font-size: calc(2vw + 2vh + 2vmin); 
     text-shadow: -1px -1px 0 #DDD, 1px -1px 0 #DDD, -1px 1px 0 #DDD, 1px 1px 0 #DDD;
     overflow: hidden;
