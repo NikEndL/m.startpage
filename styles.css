@@ -40,8 +40,7 @@
 @font-face {
     font-family: 'Palatino Linotype';
     src: local('Palatino Linotype'), /* Попытка использовать локальный шрифт */
-         url('https://kristy98755.github.io/startpage/Palatino%20Linotype.woff')format('woff'), /* Если локальный шрифт недоступен, загружается с GitHub */
-		 url('https://kristy98755.github.io/startpage/Palatino%20Linotype.woff2')format('woff2');
+         url('https://kristy98755.github.io/startpage/PalatinoLinotype.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
     font-weight: normal;
     font-style: normal;
 }
@@ -49,7 +48,7 @@
 @font-face {
     font-family: 'Palatino Linotype';
     src: local('Palatino Linotype Bold'), /* Попытка использовать локальный шрифт */
-         url('https://kristy98755.github.io/startpage/Palatino%20Linotype%20Bold.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
+         url('https://kristy98755.github.io/startpage/PalatinoLinotypeBold.woff')format('woff'); /* Если локальный шрифт недоступен, загружается с GitHub */
     font-weight: bold;
     font-style: normal;
 }
