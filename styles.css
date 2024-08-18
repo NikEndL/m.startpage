@@ -171,6 +171,7 @@ body {
     transform: translateX(-100%);
     transition: .3s;
     width: 100%;
+	font-size: calc(1vw + 2vh + 1vmin)
 }
 
 .menu-item {
@@ -181,9 +182,6 @@ body {
     text-decoration: none;
 }
 
-.menu-item:hover {
-    background: rgba(255,255,255,.2);
-}
 
 .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
