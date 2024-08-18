@@ -66,7 +66,7 @@ body {
 
 iframe {
 	width:100vw;
-	height:100vh;
+	height:calc((2vw + 2vh + 1vmin + 40px + 3px) * 30);
 }
 
 .zagolovok {
