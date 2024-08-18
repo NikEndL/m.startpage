@@ -12,10 +12,52 @@
     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
     <label for="burger-checkbox" class="burger"></label>
     <div class="hidden-items">
-		<div class="plitka active"><a href="#">Главная</a></div>
-		<div class="plitka"><a href="#">О нас</a></div>
-		<div class="plitka"><a href="#">Команда</a></div>
-		<div class="plitka"><a href="#">Контакты</a></div>
+		<div class="plitka-very-first active"><a href="https://kristy98755.github.io/m.startpage">ГЛАВНАЯ</a></div>
+		<div class="plitka"><a href="#">ПОИСК</a></div>
+		<div class="plitka catalog">
+		
+		КАТАЛОГ
+		
+			<div class="arrow">
+				<span class="arrow-left"></span>
+				<span class="arrow-right"></span>
+			</div>
+			
+			<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				document.querySelectorAll(".catalog").forEach(function(element) {
+					element.addEventListener("click", function() {
+						// Тогглируем класс "open" на стрелке
+						const arrow = this.querySelector(".arrow");
+						if (arrow) {
+							arrow.classList.toggle("open");
+						}
+
+						// Тогглируем видимость подменю
+						const subMenu = this.nextElementSibling; // Подразумевается, что .submenu1 идет сразу после .catalog
+						if (subMenu) {
+							subMenu.classList.toggle("visible");
+						}
+					});
+				});
+			});
+
+
+			</script>	
+
+		</div>
+		<div class="submenu1">
+			<div class="plitka"><a href="ladles.html">Ковши</a></div>
+			<div class="plitka"><a href="traps.html">Трапы</a></div>
+			<div class="plitka"><a href="lamps.html">Светильники</a></div>
+			<div class="plitka"><a href="deckchairs.html">Шезлонги</a></div>
+			<div class="plitka"><a href="salt.html">Гималайская соль<a></div>
+			<div class="plitka"><a href="headrests.html">Подголовники</a></div>
+			<div class="plitka"><a href="mugs.html">Кружки</a></div>
+			<div class="plitka"><a href="dousing-buckets.html">Вёдра-обливайки</a></div>
+		</div>
+		<div class="plitka"><a href="address.html">АДРЕС</a></div>
+		<div class="plitka"><a href="contacts.html">КОНТАКТЫ</a></div>
 
     </div>
 </div>
@@ -23,18 +65,5 @@
 ГЛАВНАЯ</font>
 <font style="width:70px;height:50px;"> </font>
 	
-<!--    <div class="arrow">
-        <span class="arrow-left"></span>
-        <span class="arrow-right"></span>
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll(".arrow").forEach(function(element) {
-                element.addEventListener("click", function() {
-                    this.classList.toggle("open");
-                });
-            });
-        });
-    </script>	-->
 </body>
 </html>
