@@ -171,15 +171,14 @@ body {
     transform: translateX(-100%);
     transition: .3s;
     width: 100%;
-	font-size: calc(1vw + 2vh + 1vmin)
+	font-size: calc(2vw + 2vh + 1vmin)
 }
 
 .menu-item {
-    padding: 8px;
     color: white;
-    font-size: 18px;
     text-align: center;
-    text-decoration: none;
+	font-size: calc(2vw + 2vh + 1vmin);
+
 }
 
 
