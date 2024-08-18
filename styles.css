@@ -61,14 +61,15 @@ body {
 }
 
 .zagolovok {
+	left: -6px;
     width: 100%;
     background: url('https://kristy98755.github.io/startpage/repeatable.png');
     height: auto;
     white-space: nowrap;
     position: relative;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     font-family: 'Palatino Linotype';
-    font-size: calc(2vw + 2vh + 1.3vmax); 
+    font-size: calc(2vw + 2vh + 5vmax); 
 	font-weight: bold;
     text-shadow: -2px -2px 0 #DDD, 2px -2px 0 #DDD, -2px 2px 0 #DDD, 2px 2px 0 #DDD;
     overflow: hidden;
