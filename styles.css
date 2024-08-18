@@ -97,7 +97,7 @@ body {
     background-color: #d0d048;
     padding: 3px;
     box-sizing: border-box;
-	font-size: calc(2vw + 2vh + 1vmin);
+	font-size: calc(3vw + 2vh + 1.2vmin);
 }
 
 .menu {
