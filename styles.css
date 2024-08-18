@@ -94,7 +94,7 @@ body {
     top: 0;
     z-index: 10;
     width: 100%;
-    background-color: #d0d048;
+    background-color: #777700;
     padding: 3px;
     box-sizing: border-box;
 	font-size: calc(3vw + 2vh + 1.2vmin);
@@ -168,7 +168,7 @@ body {
     position: absolute;
     display: grid;
     margin: 0;
-    background: #a7a71d;
+    background: #d0d048;
     list-style-type: none;
     transform: translateX(-100%);
     transition: .7s;
@@ -213,7 +213,7 @@ body {
 }
 
 .active {
-    background-color: #a7a71d;
+    background-color: #d0d048;
     text-decoration: underline;
 }
 
@@ -292,7 +292,7 @@ body {
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-color: #777700;
+    background-color: #a7a71d;
     z-index: 12;
 	border-bottom: 0;
 	max-height:0;
@@ -302,12 +302,12 @@ body {
 .submenu1.visible {
     display: flex;
 	transition: 0.5s ease-out;
-	max-height: calc((2vw + 2vh + 1vmin + 40px + 2px) * 9 + 3px);
+	max-height: calc((2vw + 2vh + 1vmin + 40px + 3px) * 30);
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-color: #777700;
+    background-color: #a7a71d;
     z-index: 12;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 }
 
