@@ -64,6 +64,11 @@ body {
     font-family: 'Century Gothic';
 }
 
+iframe {
+	width:100vw;
+	height:100vh;
+}
+
 .zagolovok {
 	justify-content: center;
     align-items: center;
