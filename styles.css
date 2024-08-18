@@ -64,6 +64,7 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
+	align-content: center;
     width: 100%;
     background: url('https://kristy98755.github.io/startpage/repeatable.png');
     height: auto;
