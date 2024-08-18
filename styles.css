@@ -294,7 +294,7 @@ body {
     position: relative;
     background-color: #777700;
     z-index: 12;
-	border-bottom: 1px solid black;
+	border-bottom: 0;
 	max-height:0;
 	overflow:hidden;
 
@@ -302,12 +302,12 @@ body {
 .submenu1.visible {
     display: flex;
 	transition: 0.5s ease-out;
-	max-height: calc((2vw + 2vh + 1vmin + 40px + 2px) * 9 + 2px);
+	max-height: calc((2vw + 2vh + 1vmin + 40px + 2px) * 9 + 3px);
     flex-direction: column;
     width: 100%;
     position: relative;
     background-color: #777700;
     z-index: 12;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
