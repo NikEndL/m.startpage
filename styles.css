@@ -105,25 +105,10 @@ iframe {
 	font-size: calc(3vw + 2vh + 1.2vmin);
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-}
 
 .burger {
-	position: absolute;
 	left: 0;
     margin-left: 10px; /* Отступ от левого края */
-}
-
-
-/* Стили для меню */
-.burger-checkbox {
-    position: absolute;
-    visibility: hidden;
-}
-
-.burger {
     cursor: pointer;
     width: 60px;
     height: 50px;
@@ -137,6 +122,7 @@ iframe {
 .burger::after {
     content: '';
     position: absolute;
+	display: block;
     width: 100%;
     height: 6px;
     background: #000;
@@ -154,17 +140,16 @@ iframe {
     transition: bottom .3s .15s, transform .3s;
 }
 
-.burger-checkbox:checked + .burger::before {
-    top: 22px;
-    transform: rotate(45deg);
-    box-shadow: 0 6px 0 rgba(0,0,0,0);
-    transition: box-shadow .15s, top .3s, transform .3s .15s;
+.burger.active::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
 }
-
-.burger-checkbox:checked + .burger::after {
-    bottom: 22px;
-    transform: rotate(-45deg);
-    transition: bottom .3s, transform .3s .15s;
+.burger.active::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
 }
 
 .hidden-items {
@@ -174,7 +159,6 @@ iframe {
     display: grid;
     margin: 0;
     background: #d0d048;
-    list-style-type: none;
     transform: translateX(-100%);
     transition: .7s;
     width: 100%;
@@ -217,14 +201,6 @@ iframe {
 	
 }
 
-.active {
-  text-decoration: underline;
-}
-
-
-.burger-checkbox:checked ~ .hidden-items {
-    transform: translateX(0);
-}
 
 .arrow {
     position: relative;
