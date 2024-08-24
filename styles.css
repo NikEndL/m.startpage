@@ -326,8 +326,7 @@ iframe {
     transition: transform 0.2s;
     overflow: hidden;
     background-color: #fff;
-	margin-top: var(--gap);
-    margin-bottom: var(--gap);
+	margin: 10px;
 
 }
 
