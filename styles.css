@@ -316,7 +316,9 @@ iframe {
 }
 
 .greencard {
-    width: 22vw;
+    width: 94vw;
+	margin-right: auto;
+	margin-left:auto;
     cursor: pointer;
     border-radius: 10px;
     border: 1px ridge #AAA;
@@ -373,4 +375,10 @@ iframe {
 	
 .greencard:hover {
     transform: scale(1.05);
+}
+
+.cards-grid {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
