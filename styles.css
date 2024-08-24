@@ -166,13 +166,15 @@ iframe {
 	flex-direction: column;
 	text-decoration:none;
 }
-.hidden-items:active {
+.hidden-items.active {
     top: 0;
     left: 0;
     position: relative;
     display: grid;
     margin: 0;
     background: #d0d048;
+    transform: translateX(-100%);
+    transition: .7s;
     width: 100%;
 	font-size: calc(2vw + 2vh + 1vmin);
 	flex-direction: column;
