@@ -382,3 +382,8 @@ iframe {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.margins {
+    margin: 10px;
+    /* outline: 1px solid blue; */ /* удалено для удаления отладочного контура */
+}
