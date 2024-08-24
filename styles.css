@@ -155,30 +155,22 @@ iframe {
 .hidden-items {
     top: 0;
     left: 0;
-    position: relative;
-    display: grid;
-    margin: 0;
-    background: #d0d048;
-    transform: translateX(-100%);
-    transition: .7s;
+    position: relative; /* Для фиксированного позиционирования */
+    transform: translateX(-100%); /* Перемещаем элемент за пределы экрана */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Переходы для перемещения и прозрачности */
     width: 100%;
-	font-size: calc(2vw + 2vh + 1vmin);
-	flex-direction: column;
-	text-decoration:none;
+    font-size: calc(2vw + 2vh + 1vmin);
+    background: #d0d048;
+    text-decoration: none;
+    z-index: 8; /* Чтобы элемент находился поверх других элементов */
 }
+
 .hidden-items.active {
-    top: 0;
-    left: 0;
-    position: relative;
-    display: grid;
-    margin: 0;
-    background: #d0d048;
-    transition: .7s;
-    width: 100%;
-	font-size: calc(2vw + 2vh + 1vmin);
-	flex-direction: column;
-	text-decoration:none;
+    transform: translateX(0); /* Перемещаем элемент в видимую область */
 }
+
+
+
 
 .plitka {
     color: black;
