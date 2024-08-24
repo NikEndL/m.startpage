@@ -156,7 +156,7 @@ iframe {
     top: 0;
     left: 0;
     position: relative;
-    display: none;
+    display: grid;
     margin: 0;
     background: #d0d048;
     transform: translateX(-100%);
