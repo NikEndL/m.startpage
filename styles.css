@@ -155,25 +155,25 @@ iframe {
 }
 
 .hidden-items {
-	display:none;
-	position: sticky; /* Меню прилипает к верху окна при прокрутке */
-    top: calc(3vw + 2vh + 1.2vmin + 22px);/* Меню будет размещаться под тулбаром */
-    max-height: calc(100vh - (3vw + 2vh + 1.2vmin + 22px)); /* Ограничение по высоте до высоты окна */
-    overflow-y: auto; /* Вертикальная прокрутка при переполнении */
+    visibility: hidden;
+    position: sticky;
+    top: calc(3vw + 2vh + 1.2vmin + 22px);
+    max-height: calc(100vh - (3vw + 2vh + 1.2vmin + 22px));
+    overflow-y: auto;
     left: 0;
-    transform: translateX(-100%); /* Перемещаем элемент за пределы экрана */
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Переходы для перемещения и прозрачности */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease, visibility 0.5s ease;
     width: 100%;
     font-size: calc(2vw + 2vh + 1vmin);
     background: #d0d048;
     text-decoration: none;
-    z-index: 8; /* Чтобы элемент находился поверх других элементов */
+    z-index: 8;
+    display: grid;
 }
 
 .hidden-items.active {
-    transform: translateX(0); /* Перемещаем элемент в видимую область */
-	transition: transform 0.5s ease, opacity 0.5s ease;
-	display: grid;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 
@@ -193,20 +193,7 @@ iframe {
 	text-decoration:none;
 	
 }
-.plitka-very-first {
-    color: black;
-    text-align: left;
-	font-size: calc(2vw + 2vh + 1vmin);
-    display: flex; 
-    box-sizing: border-box;
-    cursor: pointer;
-	padding: 20px;
-	padding-left: 50px;
-    position: relative; 
-	border-bottom: 2px solid black;
-	text-decoration:none;
-	margin-top: 70px;
-}
+
 
 .catalog {
 	/* Это просто триггер для нажатия */
