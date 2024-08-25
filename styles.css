@@ -156,12 +156,10 @@ iframe {
 
 .hidden-items {
 	position: sticky; /* Меню прилипает к верху окна при прокрутке */
-    top: 0;
-	margin-top: calc(3vw + 2vh + 1.2vmin + 22px);/* Меню будет размещаться под тулбаром */
+    top: calc(3vw + 2vh + 1.2vmin + 22px);/* Меню будет размещаться под тулбаром */
     max-height: calc(100vh - (3vw + 2vh + 1.2vmin + 22px)); /* Ограничение по высоте до высоты окна */
     overflow-y: auto; /* Вертикальная прокрутка при переполнении */
     left: 0;
-    position: fixed; 
     transform: translateX(-100%); /* Перемещаем элемент за пределы экрана */
     transition: transform 0.5s ease, opacity 0.5s ease; /* Переходы для перемещения и прозрачности */
     width: 100%;
