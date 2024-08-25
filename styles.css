@@ -172,7 +172,7 @@ iframe {
 
 .hidden-items.active {
     transform: translateX(0); /* Перемещаем элемент в видимую область */
-	display: flex;
+	display: grid;
 }
 
 
