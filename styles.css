@@ -158,25 +158,28 @@ iframe {
     visibility: hidden;
     position: sticky;
     top: calc(3vw + 2vh + 1.2vmin + 22px);
-    max-height: calc(100vh - (3vw + 2vh + 1.2vmin + 22px));
-    overflow-y: auto;
+    max-height: 0;
+    overflow-y: hidden;
     left: 0;
     transform: translateX(-100%);
-    transition: transform 0.5s ease, visibility 0.5s ease;
+    transition: transform 0.5s ease, visibility 0.5s ease, opacity 0.5s ease, max-height 0.5s ease;
     width: 100%;
     font-size: calc(2vw + 2vh + 1vmin);
     background: #d0d048;
     text-decoration: none;
     z-index: 8;
     opacity: 0;
-	max-height: 0;
 }
 
 .hidden-items.active {
     visibility: visible;
     transform: translateX(0);
-	opacity: 1;
-	max-height: 800px;
+    opacity: 1;
+    max-height: 800px;
+}
+
+.hidden-items:not(.active) {
+    transition: transform 0.5s ease, visibility 0s 0.5s, opacity 0.5s ease, max-height 0.5s ease;
 }
 
 
